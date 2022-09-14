@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MostrarDatos extends AppCompatActivity {
 
-    TextView tvnombre, tvapellido, tvedad, tvcorreo;
+    TextView tvnombre, tvapellido, tvedad, tvcorreo, tvGenero;
     Button btnOk;
     Spinner combo_genero;
 
@@ -24,6 +24,7 @@ public class MostrarDatos extends AppCompatActivity {
         tvapellido = (TextView)findViewById(R.id.tvApellido);
         tvedad = (TextView)findViewById(R.id.tvEdad);
         tvcorreo = (TextView)findViewById(R.id.tvCorreo);
+        tvGenero = (TextView)findViewById(R.id.tvGenero);
         combo_genero = (Spinner) findViewById(R.id.idSpinnerGenero);
         btnOk = (Button)findViewById(R.id.btnOk);
 
@@ -44,12 +45,13 @@ public class MostrarDatos extends AppCompatActivity {
         String apellido = datos.getString("ape");
         String edad = datos.getString("age");
         String correo = datos.getString("email");
-        String combo_genero = datos.getString("spi_genero");
+        String genero = datos.getString("gender");
 
         tvnombre.setText(nombre);
         tvapellido.setText(apellido);
         tvedad.setText(edad);
         tvcorreo.setText(correo);
+        tvGenero.setText(genero);
 
     }
 }
