@@ -8,10 +8,11 @@
     tools:context=".Principal">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tituloPrincipal"
         android:layout_width="397dp"
         android:layout_height="73dp"
-        android:text="Bienvenido Al Albo Campeón"
+        android:text="@string/ultimasNoticias"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,12 +21,66 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/colocolo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ultima Vez Campeón"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tamaño_letra_for"
+                android:layout_marginTop="@dimen/espacioCampeon"/>
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="203dp"
+                android:layout_height="165dp"
+                android:layout_marginTop="@dimen/espacioScroll"
+                app:srcCompat="@drawable/colocolo" />
+
+            <TextView
+                android:layout_width="328dp"
+                android:layout_height="80dp"
+                android:text="@string/descrip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tamaño_desc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloDescrip2"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tamaño_desc2"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:id="@+id/colocolo_vs"
+                android:layout_width="203dp"
+                android:layout_height="165dp"
+                android:layout_marginTop="@dimen/espacioScroll"
+                app:srcCompat="@drawable/partidovs"/>
+
+            <TextView
+                android:layout_width="364dp"
+                android:layout_height="117dp"
+                android:text="@string/descrip2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tamaño_desc" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

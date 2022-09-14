@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText user,pass;
     Button btnlogin;
+    Button btnRegistrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         user = findViewById(R.id.user);
         pass = findViewById(R.id.password);
         btnlogin = findViewById(R.id.btnLoading);
+        btnRegistrar = findViewById(R.id.btnRegistrar);
+
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +38,18 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(MainActivity.this, "Credenciales Incorrectas", Toast.LENGTH_LONG).show();
                 }
+
             }
         });
+
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this, Activity_registro.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

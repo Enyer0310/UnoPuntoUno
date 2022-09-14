@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Login android</string>
+    <string name="titulo">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="edad">Edad</string>
+    <string name="correo">Correo</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="titulo2">Mis Datos</string>
+    <string name="btnOk">Aceptar</string>
+    <string name="descrip">El 2 de julio del 2006, hace exactos 16 años, albos y azules definieron el título del Apertura en penales. El Cacique festejó en una de las finales más recordadas en la historia del fútbol chileno.</string>
+    <string name="tituloDescrip2">¿Cuando Juega El Albo?</string>
+    <string name="descrip2">Colo Colo sigue comandando el Campeonato Nacional. Los Albos mantienen la diferencia de 9 puntos en la cima de la tabla de posiciones y buscarán seguir por el camino de las victorias ante un corajudo Cobresal. Se disputara el dia Jueves a las 17:00.</string>
+    <string name="ultimasNoticias"> <u>Ultimas Noticias Del Albo!!</u>. </string>
+    <string name="titulo_spinner">Género</string>
 </resources>

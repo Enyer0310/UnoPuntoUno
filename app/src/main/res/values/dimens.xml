@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="espacio_top">25dp</dimen>
+    <dimen name="tamaño_letra_for">20sp</dimen>
+    <dimen name="tamaño_letra">25sp</dimen>
+    <dimen name="espacioScroll">10sp</dimen>
+    <dimen name="espacioCampeon">90sp</dimen>
+    <dimen name="tamaño_desc">15sp</dimen>
+    <dimen name="tamaño_desc2">18sp</dimen>
+</resources>
