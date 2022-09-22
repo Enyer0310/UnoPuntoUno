@@ -74,7 +74,13 @@
                 android:ems="10"
                 android:hint="Contraseña = 123"
                 android:inputType="textPassword"
-                android:padding="15dp" />
+                android:padding="15dp"/>
+                <CheckBox
+                    android:id="@+id/checkbox_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mostrar Contraseña"/>
+
 
             <Button
                 android:id="@+id/btnLoading"
