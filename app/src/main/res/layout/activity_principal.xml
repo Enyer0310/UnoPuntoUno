@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#232222"
     tools:context=".Principal">
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <TextView
         android:id="@+id/tituloPrincipal"
         android:layout_width="397dp"
@@ -21,66 +25,68 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacioCampeon"
+            android:text="Ultima Vez Campeón"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_letra_for"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="203dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="@dimen/espacioScroll"
+            app:srcCompat="@drawable/colocolo" />
+
+        <TextView
+            android:layout_width="328dp"
+            android:layout_height="80dp"
+            android:text="@string/descrip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/tituloDescrip2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_desc2"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/colocolo_vs"
+            android:layout_width="203dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="@dimen/espacioScroll"
+            app:srcCompat="@drawable/partidovs" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="109dp"
+            android:text="@string/descrip2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_desc" />
+
+        <Button
+            android:id="@+id/btnPlantel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="Ver Plantel" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ultima Vez Campeón"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:textSize="@dimen/tamaño_letra_for"
-                android:layout_marginTop="@dimen/espacioCampeon"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="203dp"
-                android:layout_height="165dp"
-                android:layout_marginTop="@dimen/espacioScroll"
-                app:srcCompat="@drawable/colocolo" />
-
-            <TextView
-                android:layout_width="328dp"
-                android:layout_height="80dp"
-                android:text="@string/descrip"
-                android:textColor="@color/white"
-                android:textSize="@dimen/tamaño_desc" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tituloDescrip2"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:textSize="@dimen/tamaño_desc2"
-                android:layout_marginTop="15dp"/>
-            <ImageView
-                android:id="@+id/colocolo_vs"
-                android:layout_width="203dp"
-                android:layout_height="165dp"
-                android:layout_marginTop="@dimen/espacioScroll"
-                app:srcCompat="@drawable/partidovs"/>
-
-            <TextView
-                android:layout_width="364dp"
-                android:layout_height="117dp"
-                android:text="@string/descrip2"
-                android:textColor="@color/white"
-                android:textSize="@dimen/tamaño_desc" />
-
-        </LinearLayout>
 
     </ScrollView>
 
 
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>

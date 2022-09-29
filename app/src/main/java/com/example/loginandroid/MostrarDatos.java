@@ -31,7 +31,7 @@ public class MostrarDatos extends AppCompatActivity {
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MostrarDatos.this,Activity_registro.class);
+                Intent intent = new Intent(MostrarDatos.this,MainActivity.class);
                 startActivity(intent);
             }
         });
