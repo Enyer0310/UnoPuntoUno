@@ -147,6 +147,12 @@
                 android:text="Hazte Parte De Los Albos!"
                 android:textColor="@color/white" />
 
+            <Button
+                android:id="@+id/btnEstadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubicacion De Estadio" />
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

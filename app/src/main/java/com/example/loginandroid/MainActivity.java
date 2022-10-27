@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnlogin;
     Button btnRegistrar;
     CheckBox showcheck_btn;
+    Button btnEstadio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnlogin = findViewById(R.id.btnLoading);
         btnRegistrar = findViewById(R.id.btnRegistrar);
         showcheck_btn=findViewById(R.id.checkbox_btn);
+        btnEstadio =findViewById(R.id.btnEstadio);
 
         showcheck_btn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -66,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnEstadio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this, activity_mapa.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
