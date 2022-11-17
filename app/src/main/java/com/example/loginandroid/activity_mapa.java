@@ -34,7 +34,7 @@ public class activity_mapa extends AppCompatActivity implements OnMapReadyCallba
         LatLng sydney = new LatLng(-33.5061253422054, -70.60553733122183);
         mMap.addMarker(new MarkerOptions()
                 .position(sydney)
-                .title("Marker in Sydney"));
+                .title("Ubicacion Del Estadio"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
