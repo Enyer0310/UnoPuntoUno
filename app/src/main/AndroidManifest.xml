@@ -13,9 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAndroid"
         tools:targetApi="31">
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCbfkSGbxW_fHp5k1SjG0aDqBvYWoS03Bg" />
+
         <activity
             android:name=".activity_mapa"
             android:exported="false" />

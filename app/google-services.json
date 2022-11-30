@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "660697306811",
+    "project_id": "caciqueapp-c116c",
+    "storage_bucket": "caciqueapp-c116c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660697306811:android:be0047d5d946b9d661fb9e",
+        "android_client_info": {
+          "package_name": "com.example.loginandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660697306811-lvjcr6lqfr6cg8t313tglec105r3fr7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYJ5526SH33yvp7tFDM0OFtzlQRmISfro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660697306811-lvjcr6lqfr6cg8t313tglec105r3fr7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
