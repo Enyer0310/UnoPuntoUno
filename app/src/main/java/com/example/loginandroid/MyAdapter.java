@@ -35,7 +35,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         Jugador jugador = list.get(position);
         holder.nombreTextView.setText(jugador.getNombre());
         holder.nacionalidadTextView.setText(jugador.getNacionalidad());
-        holder.numeroTextView.setText(jugador.getNumeroJugador());
     }
 
     @Override
@@ -45,7 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView nombreTextView, nacionalidadTextView, numeroTextView;
+        TextView nombreTextView, nacionalidadTextView;
 
 
         public MyViewHolder(@NonNull View itemView) {
@@ -53,7 +52,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
             nombreTextView = itemView.findViewById(R.id.nombreTextView);
             nacionalidadTextView = itemView.findViewById(R.id.nacionalidadTextView);
-            numeroTextView = itemView.findViewById(R.id.numeroTextView);
 
         }
     }

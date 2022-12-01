@@ -17,7 +17,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="136dp"
+            android:layout_height="119dp"
             android:orientation="horizontal"
             android:padding="6dp">
 
@@ -61,11 +61,6 @@
                     android:text="Chileno"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/numeroTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp"
-                    android:text="TextView" />
             </LinearLayout>
 
         </RelativeLayout>
