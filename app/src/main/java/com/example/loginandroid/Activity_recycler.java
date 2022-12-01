@@ -22,10 +22,8 @@ public class Activity_recycler extends AppCompatActivity {
     RecyclerView recyclerView;
     DatabaseReference database;
     MyAdapter myAdapter;
-    ArrayList<User> list;
-    
+    ArrayList<Jugador> list;
 
-    List<ListElment> elements;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +31,7 @@ public class Activity_recycler extends AppCompatActivity {
         setContentView(R.layout.activity_recycle);
 
         recyclerView = findViewById(R.id.listRecycle);
-        database = FirebaseDatabase.getInstance().getReference("Users");
+        database = FirebaseDatabase.getInstance().getReference("jugadores");
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -46,8 +44,8 @@ public class Activity_recycler extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    User user = dataSnapshot.getValue(User.class);
-                    list.add(user);
+                    Jugador jugador = dataSnapshot.getValue(Jugador.class);
+                    list.add(jugador);
 
 
                 }
@@ -61,27 +59,7 @@ public class Activity_recycler extends AppCompatActivity {
             }
         });
 
-        init();
     }
 
-    public void init() {
-        elements = new ArrayList<>();
-        elements.add(new ListElment("#607d8b","Brayan Cortes","Chileno"));
-        elements.add(new ListElment("#607d8b","Maximiliano Falcon","Uruguayo"));
-        elements.add(new ListElment("#607d8b","Emiliano Amor","Argentino"));
-        elements.add(new ListElment("#607d8b","Oscar Opazo","Chileno"));
-        elements.add(new ListElment("#607d8b","Gabriel Suazo","Chileno"));
-        elements.add(new ListElment("#607d8b","Leonardo Gil","Chileno"));
-        elements.add(new ListElment("#607d8b","Vicente Pizarro","Chileno"));
-        elements.add(new ListElment("#607d8b","Gabriel Costa","Peruano"));
-        elements.add(new ListElment("#607d8b","Juan Martin Lucero","Argentino"));
-        elements.add(new ListElment("#607d8b","Alexander Oroz","Chileno"));
-        elements.add(new ListElment("#607d8b","Marcos Bolados","Chileno"));
 
-        ListAdapter listAdapter = new ListAdapter(elements, this);
-        RecyclerView recyclerView =findViewById(R.id.listRecycle);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(listAdapter);
-    }
 }

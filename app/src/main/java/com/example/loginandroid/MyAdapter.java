@@ -15,9 +15,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     Context context;
 
-    ArrayList<User> list;
+    ArrayList<Jugador> list;
 
-    public MyAdapter(Context context, ArrayList<User> list) {
+    public MyAdapter(Context context, ArrayList<Jugador> list) {
         this.context = context;
         this.list = list;
     }
@@ -25,16 +25,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.activity_recycle,parent,false);
+        View v = LayoutInflater.from(context).inflate(R.layout.list_element,parent,false);
         return new MyViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        User user = list.get(position);
-        holder.nameTextView.setText(user.getNameTextView());
-        holder.cityTextView.setText(user.getNameTextView());
+        Jugador jugador = list.get(position);
+        holder.nombreTextView.setText(jugador.getNombre());
+        holder.nacionalidadTextView.setText(jugador.getNacionalidad());
+        holder.numeroTextView.setText(jugador.getNumeroJugador());
     }
 
     @Override
@@ -44,14 +45,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView nameTextView, cityTextView;
+        TextView nombreTextView, nacionalidadTextView, numeroTextView;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            nameTextView = itemView.findViewById(R.id.nameTextView);
-            cityTextView = itemView.findViewById(R.id.cityTextView);
+            nombreTextView = itemView.findViewById(R.id.nombreTextView);
+            nacionalidadTextView = itemView.findViewById(R.id.nacionalidadTextView);
+            numeroTextView = itemView.findViewById(R.id.numeroTextView);
+
         }
     }
 }

@@ -14,9 +14,10 @@
         android:layout_height="wrap_content"
         android:animateLayoutChanges="true"
         android:orientation="vertical">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="136dp"
             android:orientation="horizontal"
             android:padding="6dp">
 
@@ -30,19 +31,20 @@
                 android:paddingLeft="14dp"
                 android:paddingRight="14dp"
                 app:srcCompat="@drawable/iconrec" />
+
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
+                android:layout_marginLeft="21dp"
                 android:layout_marginTop="2dp"
                 android:layout_toEndOf="@+id/iconImage"
-                android:orientation="vertical"
-                android:layout_marginLeft="21dp"
-                android:layout_toRightOf="@+id/iconImage">
+                android:layout_toRightOf="@+id/iconImage"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/nameTextView"
+                    android:id="@+id/nombreTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
@@ -53,11 +55,17 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/cityTextView"
+                    android:id="@+id/nacionalidadTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Chileno"
                     android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/numeroTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="TextView" />
             </LinearLayout>
 
         </RelativeLayout>
